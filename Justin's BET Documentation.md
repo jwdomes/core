@@ -7,7 +7,24 @@
 ### BET.Appointment.Ingest
 * Windows Service
 * 
+
+
+
+To be organized:
+
+Appointment Detail: BET <=> WCF <= DB
+BET Config: BET <=> WCF <=> DB
+BET Report: BET <=> WCF <= DB
+
+Encounter Processing: BET => WCF => S3 -> CPMS | WCF => DB **uses JSON
+
+BET Verify: BET => WCF => ESB(IDENT) | BET <= WCF <= ESB(IDENT) **uses XML
+
+Appointment Ingest: WinService <= ESB (NASS) | WinService => CPMS Appointment Notice service **uses XML
+Encounter Ingest: WinService <= SQS | WinService => DB **uses JSON (receipt from CPMS on Encounter success)
+
+BaaS CA Service: BET => WCF => S3 | WCF => DB
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1NDEwNDUyLDEwNTA5NTE5OTEsMTUzMj
-M2Nzg5NF19
+eyJoaXN0b3J5IjpbLTcxMjU3MTcyMyw4MjU0MTA0NTIsMTA1MD
+k1MTk5MSwxNTMyMzY3ODk0XX0=
 -->
