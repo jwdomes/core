@@ -4,7 +4,8 @@
 * [Docker Desktop Installation Instructions]([http://nsc-ldsk-c1-03.cis1.cisr.uscis.dhs.gov/prefserver/Documentation/Docker%20for%20Desktop%202.2.0.3%20Install.pdf](http://nsc-ldsk-c1-03.cis1.cisr.uscis.dhs.gov/prefserver/Documentation/Docker%20for%20Desktop%202.2.0.3%20Install.pdf))
 
 ## Certificates
-On AWS-BET-BD02 (10.103.
+On AWS-BET-BD02 (10.103.157.100)
+* C:\Source\Certificates\BET.Client
 
 ## Services
 ### BET.Appointment.Ingest
@@ -28,7 +29,7 @@ Encounter Ingest: WinService <= SQS | WinService => DB **uses JSON (receipt from
 
 BaaS CA Service: BET => WCF => S3 | WCF => DB
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzUwMTIwNjMsLTcxMjU3MTcyMyw4Mj
+eyJoaXN0b3J5IjpbLTExODY0MDIzODIsLTcxMjU3MTcyMyw4Mj
 U0MTA0NTIsMTA1MDk1MTk5MSwxNTMyMzY3ODk0LC0zMzI0NTUz
 NjNdfQ==
 -->
